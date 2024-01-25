@@ -88,5 +88,10 @@ cross.addEventListener("click",()=>{
 
 })
 }
+gsap.from(".bar",{
+    width:0,
+    duration:1,
+
+})
 
 openMenu();
