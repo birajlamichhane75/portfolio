@@ -4,6 +4,18 @@
 let projectArr = [
 
     {
+        video:"videos/todolist.mp4",
+        tools:["Next JS","Mongodb"],
+        title:"Fullstack To-Do-List",
+        url:"https://github.com/birajlamichhane75/Todo-list-Next-js",
+    },
+    {
+        video:"videos/fb.mp4",
+        tools:["Next JS"],
+        title:"Facebook Clone",
+        url:"https://github.com/birajlamichhane75/Next-js",
+    },
+    {
         video:"videos/video1.mp4",
         tools:["HTML","CSS","JavaScript","GSAP"],
         title:"Animated Landing Page",
@@ -23,7 +35,7 @@ let projectArr = [
     },
     {
         video:"videos/video4.mp4",
-        tools:["HTML","CSS","JavaScript","GSAP"],
+        tools:["HTML","CSS","JavaScript"],
         title:"Instagram Clone",
         url:"https://github.com/birajlamichhane75/JavaScript_projects/tree/main/instagram",
     },
@@ -53,7 +65,7 @@ let projectArr = [
     },
 ]
 projectArr.forEach((e)=>{
-    // <div class="tools" id="tools1"><p>html</p></div>
+    
     let box = document.createElement("div");
     box.classList.add("project-box");
     
@@ -62,19 +74,22 @@ projectArr.forEach((e)=>{
     <video width="100%" height="100%" loop muted>
         <source src=${e.video} type="video/mp4">
     </video>
-    </div>
-    
-    <div class="tool-box">
-    <div class="tools" id="tools1"><p>${e.tools[0]}</p></div>
-    <div class="tools" id="tools2"><p>${e.tools[1]}</p></div>
-    <div class="tools" id="tools3"><p>${e.tools[2]}</p></div>
-    <div class="tools" id="tools3"><p>${e.tools[3]}</p></div>
-    </div>
-    
-    <div class="project-name">
+</div>
+
+<div class="tool-box">
+    <!-- Use map to iterate over e.tools and generate an array of tool divs -->
+    ${e.tools.map((tool, index) => `
+        <div class="tools" id="tools${index + 1}">
+            <p>${tool}</p>
+        </div>
+    `).join('')}
+</div>
+
+<div class="project-name">
     <h1>${e.title}</h1>
-    <a href=${e.url} target = "_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-    </div>
+    <a href=${e.url} target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+</div>
+
      `;
     
      document.querySelector(".p-center").appendChild(box);
@@ -101,4 +116,20 @@ let videoPlay = () =>{
 videoPlay();
 
 
-
+    // <div class="img-card">
+    // <video width="100%" height="100%" loop muted>
+    //     <source src=${e.video} type="video/mp4">
+    // </video>
+    // </div>
+    
+    // <div class="tool-box">
+    // <div class="tools" id="tools1"><p>${e.tools[0]}</p></div>
+    // <div class="tools" id="tools2"><p>${e.tools[1]}</p></div>
+    // <div class="tools" id="tools3"><p>${e.tools[2]}</p></div>
+    // <div class="tools" id="tools3"><p>${e.tools[3]}</p></div>
+    // </div>
+    
+    // <div class="project-name">
+    // <h1>${e.title}</h1>
+    // <a href=${e.url} target = "_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+    // </div>
