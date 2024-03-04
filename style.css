@@ -485,22 +485,21 @@ i {
 
 
 .p-center .project-box {
+    background-color: #0e0e0e;
     height: 29vw;
-    box-shadow: -.2vw -.2vw .6vw .1vw grey;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 3vw;
-    border-radius: 8px;
+    border-radius: 4px;
     overflow: hidden;
 }
 
 .project-box .img-card {
     height: 60%;
     width: 100%;
-    border-radius: 8px;
+    /* border-radius: 8px; */
     overflow: hidden;
-    box-shadow: .4vw 0px .5vw .2vw rgb(105, 105, 105);
 }
 
 
@@ -535,10 +534,10 @@ i {
 }
 
 .project-box .tool-box .tools {
-    padding: 5px;
+    padding:8px 12px;
     border-radius: 5px;
-    background-color: rgb(32, 32, 32);
-    box-shadow: -1px -1px 5px 1px rgb(75, 75, 75);
+    background-color: #0e0e0e;
+    box-shadow: rgb(0, 0, 0) 0px 3px 6px, rgb(0, 0, 0) 0px 3px 6px;
 }
 
 .project-box .tool-box .tools p {
