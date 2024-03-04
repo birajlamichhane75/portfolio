@@ -3,6 +3,13 @@
 
 let projectArr = [
 
+    
+    {
+        video:"videos/techinfo.mp4",
+        tools:["Next JS","Mongodb"],
+        title:"TechInfo",
+        url:"https://biraj-techinfo.vercel.app",
+    },
     {
         video:"videos/todolist.mp4",
         tools:["Next JS","Mongodb"],
