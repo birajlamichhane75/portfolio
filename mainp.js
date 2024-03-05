@@ -6,7 +6,7 @@ let projectArr = [
     
     {
         video:"videos/techinfo.mp4",
-        tools:["Next JS","Mongodb","TailWind CSS"],
+        tools:["Next JS","Mongodb","Tailwind CSS"],
         title:"TechInfo",
         url:"https://biraj-techinfo.vercel.app",
     },
@@ -24,7 +24,7 @@ let projectArr = [
     },
     {
         video:"videos/todolist.mp4",
-        tools:["Next JS","Mongodb","TailWind CSS"],
+        tools:["Next JS","Mongodb","Tailwind CSS"],
         title:"Fullstack To-Do-List",
         url:"https://github.com/birajlamichhane75/Todo-list-Next-js",
     },
