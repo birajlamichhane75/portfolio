@@ -11,6 +11,18 @@ let projectArr = [
         url:"https://biraj-techinfo.vercel.app",
     },
     {
+        video:"videos/d-shop.mp4",
+        tools:[ "Ethereum","React JS","Solidity", "Hardhat"],
+        title:"D-Shop",
+        url:"https://decentralize-shop.vercel.app/",
+    },
+    {
+        video:"videos/d-chat.mp4",
+        tools:[ "Ethereum","React JS","Solidity", "Hardhat",],
+        title:"D-Chat",
+        url:"https://dc-chat.vercel.app/",
+    },
+    {
         video:"videos/bhome.mp4",
         tools:["Next JS","ReduxToolkit"],
         title:"B-Home",
