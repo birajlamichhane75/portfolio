@@ -109,8 +109,9 @@ projectArr.forEach((e)=>{
     
     box.innerHTML = `
     <div class="img-card">
-    <video width="100%" height="100%" loop muted>
-        <source src=${e.video} type="video/mp4">
+    <video width="100%" height="100%" autoplay="" loop="" muted playsinline="" id="hero-video">
+        <source src="banner_video.webm" type='video/webm; codecs="vp8, vorbis"' />
+        <source src=${e.video} type="video/mp4" />
     </video>
 </div>
 
